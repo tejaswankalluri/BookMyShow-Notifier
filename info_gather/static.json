@@ -1,0 +1,212 @@
+[
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "in.bookmyshow.com",
+    "actualPort": 443,
+    "path": "/api/movies/v1/synopsis/init/static",
+    "query": "eventcode=ET00328665&channel=web&isRnROnly=false&isdesktop=false",
+    "tunnel": false,
+    "keptAlive": true,
+    "webSocket": false,
+    "remoteAddress": "in.bookmyshow.com/104.16.47.182",
+    "clientAddress": "/192.168.1.5",
+    "clientPort": 42792,
+    "times": {
+      "start": "2023-09-01T22:52:19.327+05:30",
+      "requestBegin": "2023-09-01T22:52:19.328+05:30",
+      "requestComplete": "2023-09-01T22:52:19.330+05:30",
+      "responseBegin": "2023-09-01T22:52:19.436+05:30",
+      "end": "2023-09-01T22:52:19.491+05:30"
+    },
+    "durations": {
+      "total": 163,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 2,
+      "response": 55,
+      "latency": 106
+    },
+    "speeds": { "overall": 38214, "request": 1073500, "response": 74218 },
+    "totalSize": 6229,
+    "ssl": {
+      "protocol": "TLSv1.2",
+      "cipherSuite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+    },
+    "alpn": { "protocol": "h2" },
+    "request": {
+      "sizes": { "headers": 2147, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":authority", "value": "in.bookmyshow.com" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/api/movies/v1/synopsis/init/static?eventcode=ET00328665&channel=web&isRnROnly=false&isdesktop=false"
+          },
+          {
+            "name": "sec-ch-ua",
+            "value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\""
+          },
+          { "name": "x-region-slug", "value": "hyderabad" },
+          {
+            "name": "x-mobile",
+            "value": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+          },
+          { "name": "x-app-code", "value": "WEBV2" },
+          { "name": "sec-ch-ua-mobile", "value": "?1" },
+          { "name": "path", "value": "/hyderabad/movies/kushi/ET00328665" },
+          {
+            "name": "user-agent",
+            "value": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+          },
+          { "name": "x-bms-id", "value": "1.459645615.1693588673191" },
+          { "name": "x-region-code", "value": "HYD" },
+          { "name": "accept", "value": "application/json, text/plain, */*" },
+          { "name": "cf-ipcountry", "value": "IN" },
+          { "name": "sec-ch-ua-platform", "value": "\"Android\"" },
+          { "name": "sec-fetch-site", "value": "same-origin" },
+          { "name": "sec-fetch-mode", "value": "cors" },
+          { "name": "sec-fetch-dest", "value": "empty" },
+          {
+            "name": "referer",
+            "value": "https://in.bookmyshow.com/hyderabad/movies/kushi/ET00328665"
+          },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" },
+          { "name": "accept-language", "value": "en-IN,en;q=0.9" },
+          {
+            "name": "cookie",
+            "value": "_cfuvid=0ki0wP7G5ClrVsuP2s95HILJ2jtFgAHihWfIgvkSg84-1693588672695-0-604800000"
+          },
+          {
+            "name": "cookie",
+            "value": "__cf_bm=yjlyXHO0.9rtIsborYKmw_hVz6.FqGCInsXc0U2XXYU-1693588672-0-AWaxSpuNvEFgzqjjgSrg3veL/s8Q9bFKGLtHrT/WYP62XflM1avUVYRP6lLA7adiPy+8AP8eFkpe7nA35EXftG8="
+          },
+          {
+            "name": "cookie",
+            "value": "__cfruid=9df777f5d143bcf6a4811045f268e9db6b7d69a7-1693588673"
+          },
+          { "name": "cookie", "value": "bmsId=1.459645615.1693588673191" },
+          {
+            "name": "cookie",
+            "value": "preferences=%7B%22ticketType%22%3A%22M-TICKET%22%7D"
+          },
+          { "name": "cookie", "value": "_gcl_au=1.1.448540338.1693588673" },
+          {
+            "name": "cookie",
+            "value": "cf_clearance=ukTdT3pK_NvRd5t9zyE5yWGkIiTRofMgJWfPdpzSTM8-1693588674-0-1-c97f4911.389df5e4.9e7e16f1-0.2.1693588674"
+          },
+          { "name": "cookie", "value": "_ga=GA1.1.1040329303.1693588675" },
+          {
+            "name": "cookie",
+            "value": "WZRK_G=9a5ffc5f00ab44b583b2a6eb1b5947b7"
+          },
+          { "name": "cookie", "value": "_fbp=fb.1.1693588675309.1289974131" },
+          { "name": "cookie", "value": "userNotified=false" },
+          { "name": "cookie", "value": "overrideArea=%22true%22" },
+          {
+            "name": "cookie",
+            "value": "rgn=%7B%22regionCode%22%3A%22HYD%22%2C%22regionName%22%3A%22Hyderabad%22%2C%22subCode%22%3A%22%22%2C%22subName%22%3A%22%22%2C%22regionNameSlug%22%3A%22hyderabad%22%2C%22regionCodeSlug%22%3A%22hyd%22%2C%22Lat%22%3A%2217.385044%22%2C%22Long%22%3A%2278.486671%22%7D"
+          },
+          { "name": "cookie", "value": "AMP_TOKEN=%24NOT_FOUND" },
+          {
+            "name": "cookie",
+            "value": "tvc_bmscookie=GA1.2.1040329303.1693588675"
+          },
+          {
+            "name": "cookie",
+            "value": "tvc_bmscookie_gid=GA1.2.1225852721.1693588721"
+          },
+          {
+            "name": "cookie",
+            "value": "_cc_id=de2c348ae50fdd6583179232dabe0fe2"
+          },
+          {
+            "name": "cookie",
+            "value": "panoramaId=1a1232d8463df626d2cfed22893d16d539384cef2fe85c7d9b5a412b84e7cd9b"
+          },
+          { "name": "cookie", "value": "panoramaIdType=panoIndiv" },
+          {
+            "name": "cookie",
+            "value": "cto_bundle=3LI8HV91cnR0ZzBwOFJYRSUyQjNEdE5XYSUyRkxVTFRYeGl5RUR4b3lyY3VScVlXMlVSd2hNYUtMMEFwb2NkSHVUeXNoRFREbnY3YXlvRTBNU0NMNlVZTWtCSlowcUowSlVlb0JXNk9EcEI1eGo2RzQ0Zm9GVk5aTGtmd010JTJGaFAwdXdET1plJTJC"
+          },
+          {
+            "name": "cookie",
+            "value": "_cc_cc=ACZ4XmNQSEk1SjY2sUhMNTVIS0kxM7UwNjS3NDI2SklMSjVISzViAIKUT7Jpq%2F7%2F%2F88P4oCB1J%2BGhfqMx5oYGf4zMjLMXLscwenqnoPgbJiOxPnXhcT5g8xpRdYzvx9J2Vxkzv%2F%2FCxBGH%2BpFUnYQmbMfmbMXmfN68wtduKunrP9nAOe8ffERIfNs8RwWuMxlZM65o4eY4TKL7%2FWowjk%2FNk5B6NmMrOfgsqkImevn1eFazp16xAbnAAANYYPe"
+          },
+          {
+            "name": "cookie",
+            "value": "_cc_aud=ABR4XmNgYGBI%2BSSbBqQggImBT3IeiMknORdIAgA9jQNl"
+          },
+          { "name": "cookie", "value": "panoramaId_expiry=1694193638947" },
+          {
+            "name": "cookie",
+            "value": "WZRK_S_RK4-47R-98KZ=%7B%22p%22%3A7%2C%22s%22%3A1693588674%2C%22t%22%3A1693588911%7D"
+          },
+          { "name": "cookie", "value": "_gat_UA-27207583-8=1" },
+          {
+            "name": "cookie",
+            "value": "_ga_84T5GTD0PC=GS1.1.1693588675.1.1.1693588937.32.0.0"
+          }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 302, "body": 3780 },
+      "mimeType": "application/json",
+      "charset": "utf-8",
+      "contentEncoding": "br",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "date", "value": "Fri, 01 Sep 2023 17:22:19 GMT" },
+          {
+            "name": "content-type",
+            "value": "application/json; charset=utf-8"
+          },
+          { "name": "cache-control", "value": "max-age=0, no-store, no-cache" },
+          { "name": "vary", "value": "Accept-Encoding" },
+          {
+            "name": "cdn-cache-control",
+            "value": "public, max-age=1800, stale-if-error=28800"
+          },
+          { "name": "x-envoy-upstream-service-time", "value": "27" },
+          {
+            "name": "x-envoy-decorator-operation",
+            "value": "critical-mt-core-app-production.movies.svc.cluster.local:80/*"
+          },
+          { "name": "x-xss-protection", "value": "1; mode=block" },
+          { "name": "x-content-type-options", "value": "nosniff" },
+          { "name": "x-frame-options", "value": "SAMEORIGIN" },
+          { "name": "last-modified", "value": "Fri, 01 Sep 2023 17:18:59 GMT" },
+          { "name": "cf-cache-status", "value": "HIT" },
+          { "name": "age", "value": "9" },
+          {
+            "name": "report-to",
+            "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JAhGPUG9ckRdyxjXA%2BVfxRip%2Fl%2FR4REQ7ujIs4HwQztZWYokTMx8ufQj4pDZWRCjj6%2F9gNMWHFuc4U4c42Kxcq1Uhyqb6TxmXNuEOCKJmRrEHp7SlPtcvcbc7dIa%2BqWIn0YR\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+          },
+          {
+            "name": "nel",
+            "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+          },
+          {
+            "name": "strict-transport-security",
+            "value": "max-age=15552000; includeSubDomains; preload"
+          },
+          { "name": "server", "value": "cloudflare" },
+          { "name": "cf-ray", "value": "7fff31d6880079da-HYD" },
+          { "name": "content-encoding", "value": "br" },
+          { "name": "alt-svc", "value": "h3=\":443\"; ma=86400" }
+        ]
+      }
+    }
+  }
+]

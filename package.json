@@ -1,0 +1,22 @@
+{
+  "name": "bookmyshow-bot",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "serverless offline start --noTimeout",
+    "deploy": "npx serverless deploy --verbose",
+    "predeploy": "npm run prisma:generate",
+    "prisma:generate": "npx prisma generate",
+    "prisma:dbpush": "npx prisma db push"
+  },
+  "devDependencies": {
+    "prisma": "4.16.2",
+    "serverless-offline": "^12.0.4"
+  },
+  "dependencies": {
+    "@prisma/client": "4.16.2",
+    "axios": "^1.5.0",
+    "moment": "^2.29.4"
+  }
+}
