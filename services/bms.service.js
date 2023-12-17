@@ -15,7 +15,6 @@ module.exports.remainderJob = async () => {
         );
         console.log(res);
         if (res) {
-          console.log("yes into res");
           await sendMessageToUser(
             item.chatId,
             `movie tickets started ${item.movieCode} ${item.venueCode} ${item.date}`
@@ -25,7 +24,6 @@ module.exports.remainderJob = async () => {
               id: item.id,
             },
           });
-          console.log("yes into res end");
         }
       })
     );
@@ -62,7 +60,6 @@ module.exports.dailyCleanup = async () => {
 
 async function checkBooking(movieCode, venueCode, date) {
   const formatedDate = moment(date).utc().format("YYYYMMDD");
-  console.log(formatedDate);
   try {
     const { data } = await axios.get(
       `https://737lz1bq1l.execute-api.ap-south-1.amazonaws.com/default/puppeter`,
@@ -75,12 +72,8 @@ async function checkBooking(movieCode, venueCode, date) {
         },
       }
     );
-    // console.log(data);
-    // console.log(typeof data);
     for (const item of data.ShowDetails[0].Event) {
-      // console.log(item);
       if (item.ChildEvents[0].EventCode === movieCode) {
-        console.log("retured true");
         return true; // This will exit the function with a true value.
       }
     }
