@@ -2,6 +2,8 @@
 
 BookMyShow Notifier is a Telegram Bot helps users to get notified when movie tickets are listed.
 
+![Main screen](https://raw.githubusercontent.com/tejaswankalluri/BookMyShow-Notifier/main/docs/screen.png)
+
 link to telgram bot [@notifymyshowbot](https://t.me/notifymyshowbot)
 
 ## Technology
