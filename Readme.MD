@@ -19,15 +19,17 @@ link to telgram bot [@notifymyshowbot](https://t.me/notifymyshowbot)
 
 ## Installation
 
-- create bot using botFather [@BotFather](https://t.me/BotFather)
-- set bottoken at env.js
-- create .env
-  - DATABASE_URL="mongodb+srv://USERNAME:PASSWORD@URL/DBNAME?retryWrites=true&w=majority"
+- Create bot using botFather [@BotFather](https://t.me/BotFather)
+- Set bottoken at env.js
+- Create .env
+  - ```
+    DATABASE_URL="mongodb+srv://USERNAME:PASSWORD@URL/DBNAME?retryWrites=true&w=majority"
+    ```
 - ```bash
     npm i -g yarn
   ```
 - ```bash
-  yarn install
+    yarn install
   ```
 - ```bash
     npm run dev
