@@ -32,10 +32,9 @@ public class BmsService {
     private UserRequestRepository requestRepository;
     private TelegramService telegramService;
 
-    @Scheduled(cron = "*/10 * * * * *")
+    @Scheduled(cron = "0 * * * * *")
     public void reminderJob() {
         try {
-
             Iterable<UserRequest> requestsIterable = requestRepository.findAll();
             List<UserRequest> requests = StreamSupport.stream(requestsIterable.spliterator(), false)
                     .collect(Collectors.toList());
