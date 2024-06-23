@@ -19,6 +19,7 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -32,7 +33,7 @@ public class BmsService {
     private UserRequestRepository requestRepository;
     private TelegramService telegramService;
 
-    @Scheduled(cron = "0 * * * * *")
+//    @Scheduled(cron = "0 * * * * *")
     public void reminderJob() {
         try {
             Iterable<UserRequest> requestsIterable = requestRepository.findAll();
@@ -58,6 +59,28 @@ public class BmsService {
         }
     }
 
+    @Scheduled(cron = "0 0 0 * * ?")
+    public void dailyCleanup() {
+        try {
+            // Get yesterday's date
+            Calendar cal = Calendar.getInstance();
+            cal.add(Calendar.DATE, -1);
+            Date yesterday = cal.getTime();
+
+            // Find items to delete
+            List<UserRequest> itemsToDelete = requestRepository.findAllRequestsTill(yesterday);
+
+            // Delete each item
+            for (UserRequest item : itemsToDelete) {
+                requestRepository.deleteById(item.getId());
+            }
+
+            System.out.println("Cleanup successful " + LocalDateTime.now());
+        } catch (Exception e) {
+            System.err.println("Cleanup error: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
     public boolean checkBooking(String movieCode, String venueCode, String dateCode) {
         ArrayList<BmsEvent> events = getShowTimes(venueCode, dateCode);
         for (BmsEvent event : events) {
@@ -114,9 +137,7 @@ public class BmsService {
                     }
                 }
             }
-//            System.out.println(result.get(0).getChildEvents().get(0).getEventCode());
         } catch (Exception e) {
-            // result.put("error", e.getMessage());
             e.printStackTrace();
         } finally {
             if (driver != null) {
